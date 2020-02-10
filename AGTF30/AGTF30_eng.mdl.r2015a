@@ -1,205 +1,43 @@
 Model {
   Name			  "AGTF30_eng"
-  Version		  10.0
+  Version		  8.5
+  MdlSubVersion		  0
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    3
     Inport {
       Name		      "Sys_In"
       BusObject		      ""
-      OutputFunctionCall      "off"
-      SampleTime	      "-1"
-      UnitExpr		      "inherit"
     }
     Inport {
       Name		      "Ind_vec"
       BusObject		      ""
-      OutputFunctionCall      "off"
-      SampleTime	      "-1"
-      UnitExpr		      "inherit"
     }
     Inport {
       Name		      "N_vec"
       BusObject		      ""
-      OutputFunctionCall      "off"
-      SampleTime	      "-1"
-      UnitExpr		      "inherit"
     }
     NumRootOutports	    3
     Outport {
       Name		      "Eng_Out"
       BusObject		      "Eng_Bus"
       BusOutputAsStruct	      "off"
-      UnitExpr		      "inherit"
     }
     Outport {
       Name		      "Ndot_vec"
       BusObject		      ""
       BusOutputAsStruct	      "off"
-      UnitExpr		      "inherit"
     }
     Outport {
       Name		      "Dep_vec"
       BusObject		      ""
       BusOutputAsStruct	      "off"
-      UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.306"
+    ComputedModelVersion    "1.304"
     NumModelReferences	    0
     NumTestPointedSignals   0
-    NumProvidedFunctions    0
-    NumRequiredFunctions    0
-    NumResetEvents	    0
-    HasInitializeEvent	    0
-    HasTerminateEvent	    0
-    PreCompExecutionDomainType "Unset"
-    IsExportFunctionModel   0
-    IsArchitectureModel	    0
-    IsAUTOSARArchitectureModel 0
-    NumParameterArguments   0
-    NumExternalFileReferences 22
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Ambient_TMATS/Ambient"
-      Path		      "AGTF30_eng/Engine/Ambient"
-      SID		      "1"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Nozzle_TMATS/Nozzle"
-      Path		      "AGTF30_eng/Engine/BackEng/CoreNoz"
-      SID		      "17"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_TurbineNPSS_TMATS/Turbine_NPSS"
-      Path		      "AGTF30_eng/Engine/BackEng/LPT"
-      SID		      "14"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
-      Path		      "AGTF30_eng/Engine/BackEng/duct45/StaticCalc"
-      SID		      "985"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
-      Path		      "AGTF30_eng/Engine/BackEng/duct5/StaticCalc"
-      SID		      "1011"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_NozzleVar_TMATS/NozzleVar"
-      Path		      "AGTF30_eng/Engine/Bypass/BypNoz"
-      SID		      "626"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
-      Path		      "AGTF30_eng/Engine/Bypass/duct17/StaticCalc"
-      SID		      "933"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Burner_TMATS/Burner"
-      Path		      "AGTF30_eng/Engine/Core/Burner"
-      SID		      "12"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_CompressorVG_TMATS/CompressorVG"
-      Path		      "AGTF30_eng/Engine/Core/CompressorVG"
-      SID		      "1273"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_TurbineNPSS_TMATS/Turbine_NPSS"
-      Path		      "AGTF30_eng/Engine/Core/HPT"
-      SID		      "13"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
-      Path		      "AGTF30_eng/Engine/Core/S36 Static Calc/StaticCalc"
-      SID		      "1070"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Compressor_TMATS/Compressor"
-      Path		      "AGTF30_eng/Engine/FrontEng/FAN"
-      SID		      "554"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_GearBox_TMATS/GearBox"
-      Path		      "AGTF30_eng/Engine/FrontEng/GearBox"
-      SID		      "574"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Inlet_TMATS/Inlet"
-      Path		      "AGTF30_eng/Engine/FrontEng/Inlet"
-      SID		      "2"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Compressor_TMATS/Compressor"
-      Path		      "AGTF30_eng/Engine/FrontEng/LPC"
-      SID		      "555"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Splitter_TMATS/Splitter"
-      Path		      "AGTF30_eng/Engine/FrontEng/Splitter"
-      SID		      "4"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Valve_TMATS/Valve"
-      Path		      "AGTF30_eng/Engine/FrontEng/Valve"
-      SID		      "683"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
-      Path		      "AGTF30_eng/Engine/FrontEng/duct2/StaticCalc"
-      SID		      "777"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
-      Path		      "AGTF30_eng/Engine/FrontEng/duct25/StaticCalc"
-      SID		      "907"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Shaft_TMATS/Shaft"
-      Path		      "AGTF30_eng/Engine/HP_Shaft"
-      SID		      "199"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_Shaft_TMATS/Shaft"
-      Path		      "AGTF30_eng/Engine/LP_Shaft"
-      SID		      "198"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "Lib_Turbo_SFCCalc_TMATS/SFCCalc"
-      Path		      "AGTF30_eng/Engine/SFCCalc"
-      SID		      "1262"
-      Type		      "LIBRARY_BLOCK"
-    }
-    OrderedModelArguments   1
   }
-  DiagnosticSuppressor	  "on"
-  LogicAnalyzerPlugin	  "on"
-  SLCCPlugin		  "on"
-  AnimationPlugin	  "on"
-  WebScopes_FoundationPlugin "on"
-  NotesPlugin		  "on"
-  EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  on
@@ -209,7 +47,6 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -229,7 +66,6 @@ Model {
 	Width			[50]
 	Height			[50]
 	Filter			[57]
-	Minimized		"Unset"
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -237,106 +73,35 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		4
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [1]
-	  IsTabbed		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "132"
-	  Extents		  [860.0, 487.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-148.31250000000011, 234.30819723240438]
-	  SceneRectInView	  [-148.31250000000011, 234.30819723240438, 1075.0, 608.75]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [860.0, 487.0]
-	  ZoomFactor		  [3.0]
-	  Offset		  [135.7708333333334, 180.33333333333331]
-	  SceneRectInView	  [135.7708333333334, 180.33333333333331, 286.66666666666669, 162.33333333333334]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "536"
-	  Extents		  [860.0, 487.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-61.382461481021778, 373.68483602010281]
-	  SceneRectInView	  [-61.382461481021778, 373.68483602010281, 1075.0, 608.75]
-	}
-	Object {
-	  $ObjectID		  8
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "48"
-	  Extents		  [860.0, 487.0]
-	  ZoomFactor		  [0.39]
-	  Offset		  [-23.396133814102541, -60.076923076923094]
-	  SceneRectInView	  [-23.396133814102541, -60.076923076923094, 2205.1282051282051, 1248.7179487179487]
-	}
-	PropName		"EditorsInfo"
-      }
       Object {
-	$PropName		"DockComponentsInfo"
-	$ObjectID		9
-	$ClassName		"Simulink.DockComponentInfo"
-	Type			"GLUE2:PropertyInspector"
-	ID			"Property Inspector"
-	Visible			[0]
-	CreateCallback		""
-	UserData		""
-	Floating		[0]
-	DockPosition		"Right"
-	Width			[640]
-	Height			[480]
-	Minimized		"Unset"
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[864.0, 555.0]
+	ZoomFactor		[3.0]
+	Offset			[135.77083333333334, 180.33333333333331]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
-      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
-      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAOCAAACJAAAAAEAAAACAAAAAQAAAAL8AAAAAA=="
-      Array {
-	Type			"Cell"
-	Dimension		0
-	PropName		"PersistedApps"
-      }
-      WindowUuid	      "dfede471-9474-42ad-9991-85d4259765b6"
     }
-    BDUuid		    "24aa686d-b783-4c65-b9bf-5272dc7f062e"
   }
-  HideAutomaticNames	  on
   Created		  "Wed Jun 24 13:31:51 2015"
   Creator		  "jwchapm2"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "jdiegelm"
+  LastModifiedBy	  "jwchapm2"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Feb 03 16:02:39 2020"
-  RTWModifiedTimeStamp	  502646554
-  ModelVersionFormat	  "1.%<AutoIncrement:306>"
+  LastModifiedDate	  "Thu Mar 15 10:09:00 2018"
+  RTWModifiedTimeStamp	  413465309
+  ModelVersionFormat	  "1.%<AutoIncrement:304>"
+  ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "all"
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
-  ShowAllPropagatedSignalLabels	off
-  PortDataTypeDisplayFormat "AliasTypeOnly"
-  ShowEditTimeErrors	  on
-  ShowEditTimeWarnings	  on
-  ShowEditTimeAdvisorChecks off
-  ShowPortUnits		  off
   ShowDesignRanges	  off
   ShowLoopsOnError	  on
   IgnoreBidirectionalLines off
@@ -345,36 +110,22 @@ Model {
   ShowSignalResolutionIcons on
   ShowViewerIcons	  on
   SortedOrder		  on
-  VariantCondition	  off
-  ShowSubsystemDomainSpec off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
-  ShowVisualizeInsertedRTB on
   ShowMarkup		  on
   BlockNameDataTip	  off
   BlockParametersDataTip  off
   BlockDescriptionStringDataTip	off
-  BlockVariantConditionDataTip off
   ToolBar		  on
   StatusBar		  on
   BrowserShowLibraryLinks on
-  FunctionConnectors	  off
   BrowserLookUnderMasks	  off
-  MultiThreadCoSim	  on
   SimulationMode	  "normal"
-  SILPILModeSetting	  "automated"
-  SILPILSystemUnderTest	  "topmodel"
-  SILPILSimulationModeTopModel "normal"
-  SILPILSimulationModeModelRef "normal"
-  SimTabSimulationMode	  "normal"
-  CodeVerificationMode	  "software-in-the-loop (sil)"
   PauseTimes		  "5"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
-  EnablePacing		  off
-  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -384,14 +135,14 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    10
+    $ObjectID		    6
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "AGTF30_eng"
-    overrideMode_	    [0.0]
+    model_		    "N3_eng"
+    overrideMode_	    [0U]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "AGTF30_eng"
+      Cell		      "N3_eng"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -401,6 +152,27 @@ Model {
       PropName		      "logAsSpecifiedByModelsSSIDs_"
     }
   }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  CovSFcnEnable		  on
+  CovBoundaryAbsTol	  0.000010
+  CovBoundaryRelTol	  0.010000
+  CovUseTimeInterval	  off
+  CovStartTime		  0
+  CovStopTime		  0
   ExtModeBatchMode	  off
   ExtModeEnableFloating	  on
   ExtModeTrigType	  "manual"
@@ -424,30 +196,24 @@ Model {
   ExtModeAutoUpdateStatusClock on
   ShowModelReferenceBlockVersion off
   ShowModelReferenceBlockIO off
-  OrderedModelArguments	  on
   Array {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      11
-      Version		      "19.1.1"
-      DisabledProps	      []
-      Description	      ""
+      $ObjectID		      7
+      Version		      "1.15.0"
       Array {
 	Type			"Handle"
-	Dimension		9
+	Dimension		8
 	Simulink.SolverCC {
-	  $ObjectID		  12
-	  Version		  "19.1.1"
-	  DisabledProps		  []
-	  Description		  ""
-	  Components		  []
+	  $ObjectID		  8
+	  Version		  "1.15.0"
 	  StartTime		  "0.0"
 	  StopTime		  "10.0"
 	  AbsTol		  "auto"
-	  AutoScaleAbsTol	  on
 	  FixedStep		  "0.015"
 	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
 	  ConsecutiveZCsStepRelTol "10*128*eps"
@@ -458,7 +224,8 @@ Model {
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
-	  EnableMultiTasking	  on
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
 	  Solver		  "FixedStepDiscrete"
 	  SolverName		  "FixedStepDiscrete"
@@ -467,24 +234,15 @@ Model {
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Nonadaptive"
 	  AlgebraicLoopSolver	  "TrustRegion"
-	  SolverInfoToggleStatus  off
-	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
 	  PositivePriorityOrder	  off
 	  AutoInsertRateTranBlk	  off
 	  SampleTimeConstraint	  "STIndependent"
 	  InsertRTBMode		  "Whenever possible"
-	  SampleTimeProperty	  []
-	  DecoupledContinuousIntegration off
-	  MinimalZcImpactIntegration off
-	  SolverOrder		  3
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  13
-	  Version		  "19.1.1"
-	  DisabledProps		  []
-	  Description		  ""
-	  Components		  []
+	  $ObjectID		  9
+	  Version		  "1.15.0"
 	  Decimation		  "1"
 	  ExternalInput		  "[0 0]"
 	  FinalStateName	  "xFinal"
@@ -494,7 +252,7 @@ Model {
 	  LoadExternalInput	  off
 	  LoadInitialState	  off
 	  SaveFinalState	  off
-	  SaveOperatingPoint	  off
+	  SaveCompleteFinalSimState off
 	  SaveFormat		  "Array"
 	  SignalLoggingSaveFormat "Dataset"
 	  SaveOutput		  off
@@ -503,8 +261,6 @@ Model {
 	  DSMLogging		  off
 	  InspectSignalLogs	  off
 	  VisualizeSimOutput	  on
-	  StreamToWorkspace	  off
-	  StreamVariableName	  "streamout"
 	  SaveTime		  off
 	  ReturnWorkspaceOutputs  off
 	  StateSaveName		  "xout"
@@ -516,17 +272,13 @@ Model {
 	  OutputTimes		  "[]"
 	  ReturnWorkspaceOutputsName "out"
 	  Refine		  "1"
-	  LoggingToFile		  off
-	  DatasetSignalFormat	  "timeseries"
-	  LoggingFileName	  "out.mat"
-	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  14
-	  Version		  "19.1.1"
+	  $ObjectID		  10
+	  Version		  "1.15.0"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    9
+	    Dimension		    8
 	    Cell		    "BooleansAsBitfields"
 	    Cell		    "PassReuseOutputArgsAs"
 	    Cell		    "PassReuseOutputArgsThreshold"
@@ -535,17 +287,13 @@ Model {
 	    Cell		    "OptimizeModelRefInitCode"
 	    Cell		    "NoFixptDivByZeroProtection"
 	    Cell		    "UseSpecifiedMinMax"
-	    Cell		    "EfficientTunableParamExpr"
 	    PropName		    "DisabledProps"
 	  }
-	  Description		  ""
-	  Components		  []
 	  BlockReduction	  on
 	  BooleanDataType	  on
 	  ConditionallyExecuteInputs on
-	  DefaultParameterBehavior "Inlined"
+	  InlineParams		  on
 	  UseDivisionForNetSlopeComputation "off"
-	  GainParamInheritBuiltInType off
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
 	  UseSpecifiedMinMax	  off
@@ -556,7 +304,6 @@ Model {
 	  CachingGlobalReferences off
 	  GlobalBufferReuse	  on
 	  StrengthReduction	  off
-	  AdvancedOptControl	  ""
 	  ExpressionFolding	  on
 	  BooleansAsBitfields	  off
 	  BitfieldContainerType	  "uint_T"
@@ -576,40 +323,20 @@ Model {
 	  NoFixptDivByZeroProtection off
 	  EfficientFloat2IntCast  off
 	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
 	  LifeSpan		  "inf"
 	  MaxStackSize		  "Inherit from target"
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "off"
 	  AccelVerboseBuild	  off
-	  OptimizeBlockOrder	  "off"
-	  OptimizeDataStoreBuffers on
-	  BusAssignmentInplaceUpdate on
-	  DifferentSizesBufferReuse off
-	  UseRowMajorAlgorithm	  off
-	  OptimizationLevel	  "level2"
-	  OptimizationPriority	  "Balanced"
-	  OptimizationCustomize	  on
-	  LabelGuidedReuse	  off
-	  MultiThreadedLoops	  off
-	  DenormalBehavior	  "GradualUnderflow"
-	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  15
-	  Version		  "19.1.1"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    1
-	    Cell		    "UseOnlyExistingSharedCode"
-	    PropName		    "DisabledProps"
-	  }
-	  Description		  ""
-	  Components		  []
+	  $ObjectID		  11
+	  Version		  "1.15.0"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
-	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -632,12 +359,12 @@ Model {
 	  IgnoredZcDiagnostic	  "warning"
 	  SolverPrmCheckMsg	  "none"
 	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
 	  MultiTaskDSMMsg	  "error"
 	  MultiTaskCondExecSysMsg "error"
 	  MultiTaskRateTransMsg	  "error"
 	  SingleTaskRateTransMsg  "none"
 	  TasksWithSamePriorityMsg "warning"
-	  ExportedTasksRateTransMsg "none"
 	  SigSpecEnsureSampleTimeMsg "warning"
 	  CheckMatrixSingularityMsg "none"
 	  IntegerOverflowMsg	  "warning"
@@ -654,20 +381,17 @@ Model {
 	  UnnecessaryDatatypeConvMsg "none"
 	  VectorMatrixConversionMsg "none"
 	  InvalidFcnCallConnMsg	  "error"
-	  FcnCallInpInsideContextMsg "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
 	  SignalLabelMismatchMsg  "none"
 	  UnconnectedInputMsg	  "warning"
 	  UnconnectedOutputMsg	  "warning"
 	  UnconnectedLineMsg	  "warning"
-	  UseOnlyExistingSharedCode "error"
 	  SFcnCompatibilityMsg	  "none"
 	  FrameProcessingCompatibilityMsg "error"
 	  UniqueDataStoreMsg	  "none"
 	  BusObjectLabelMismatch  "warning"
 	  RootOutportRequireBusObject "warning"
 	  AssertControl		  "UseLocalSettings"
-	  AllowSymbolicDim	  on
-	  RowMajorDimensionSupport off
 	  ModelReferenceIOMsg	  "none"
 	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
 	  ModelReferenceVersionMismatchMessage "none"
@@ -677,51 +401,27 @@ Model {
 	  ModelReferenceSymbolNameMessage "warning"
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "none"
-	  OperatingPointInterfaceChecksumMismatchMsg "warning"
-	  NonCurrentReleaseOperatingPointMsg "error"
-	  ChecksumConsistencyForSSReuse	"none"
-	  PregeneratedLibrarySubsystemCodeDiagnostic "warning"
-	  MatchCodeGenerationContextForUpdateDiagram "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
 	  InitInArrayFormatMsg	  "none"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
 	  NonBusSignalsTreatedAsBus "none"
-	  SymbolicDimMinMaxWarning "warning"
-	  LossOfSymbolicDimsSimulationWarning "warning"
-	  LossOfSymbolicDimsCodeGenerationWarning "error"
-	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
 	  BlockIODiagnostic	  "none"
 	  SFUnusedDataAndEventsDiag "warning"
 	  SFUnexpectedBacktrackingDiag "warning"
 	  SFInvalidInputDataAccessInChartInitDiag "warning"
 	  SFNoUnconditionalDefaultTransitionDiag "warning"
 	  SFTransitionOutsideNaturalParentDiag "warning"
-	  SFUnreachableExecutionPathDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
 	  SFUndirectedBroadcastEventsDiag "warning"
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	  SFOutputUsedAsStateInMooreChartDiag "error"
-	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
-	  SFSelfTransitionDiag	  "warning"
-	  SFExecutionAtInitializationDiag "none"
-	  SFMachineParentedDataDiag "warning"
 	  IntegerSaturationMsg	  "warning"
-	  AllowedUnitSystems	  "all"
-	  UnitsInconsistencyMsg	  "warning"
-	  AllowAutomaticUnitConversions	on
-	  RCSCRenamedMsg	  "warning"
-	  RCSCObservableMsg	  "warning"
-	  ForceCombineOutputUpdateInSim	off
-	  UnitDatabase		  ""
-	  UnderSpecifiedDimensionMsg "none"
-	  DebugExecutionForFMUViaOutOfProcess off
-	  ArithmeticOperatorsInVariantConditions "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  16
-	  Version		  "19.1.1"
-	  DisabledProps		  []
-	  Description		  ""
-	  Components		  []
+	  $ObjectID		  12
+	  Version		  "1.15.0"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
@@ -730,8 +430,6 @@ Model {
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
-	  ProdBitPerSizeT	  32
-	  ProdBitPerPtrDiffT	  32
 	  ProdLargestAtomicInteger "Char"
 	  ProdLargestAtomicFloat  "None"
 	  ProdIntDivRoundTo	  "Undefined"
@@ -748,8 +446,6 @@ Model {
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
-	  TargetBitPerSizeT	  32
-	  TargetBitPerPtrDiffT	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
@@ -762,68 +458,38 @@ Model {
 	  TargetHWDeviceType	  "Specified"
 	  TargetUnknown		  off
 	  ProdEqTarget		  on
-	  UseEmbeddedCoderFeatures on
-	  UseSimulinkCoderFeatures on
-	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  17
-	  Version		  "19.1.1"
-	  DisabledProps		  []
-	  Description		  ""
-	  Components		  []
+	  $ObjectID		  13
+	  Version		  "1.15.0"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
-	  EnableRefExpFcnMdlSchedulingChecks on
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
 	  ParallelModelReferenceErrorOnInvalidPool on
 	  ParallelModelReferenceMATLABWorkerInit "None"
 	  ModelReferenceNumInstancesAllowed "Single"
 	  PropagateVarSize	  "Infer from blocks in model"
-	  ModelDependencies	  ""
 	  ModelReferencePassRootInputsByReference on
 	  ModelReferenceMinAlgLoopOccurrences off
 	  PropagateSignalLabelsOutOfModel off
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  18
-	  Version		  "19.1.1"
-	  DisabledProps		  []
-	  Description		  ""
-	  Components		  []
-	  SimCustomSourceCode	  ""
-	  SimCustomHeaderCode	  ""
-	  SimCustomInitializer	  ""
-	  SimCustomTerminator	  ""
-	  SimReservedNameArray	  []
-	  SimUserSources	  ""
-	  SimUserIncludeDirs	  ""
-	  SimUserLibraries	  ""
-	  SimUserDefines	  ""
-	  SimCustomCompilerFlags  ""
-	  SimCustomLinkerFlags	  ""
+	  $ObjectID		  14
+	  Version		  "1.15.0"
+	  SFSimOverflowDetection  on
 	  SFSimEcho		  on
 	  SimCtrlC		  on
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
-	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
-	  ModelFunctionsGlobalVisibility "on"
-	  CompileTimeRecursionLimit 50
-	  EnableRuntimeRecursion  on
-	  MATLABDynamicMemAlloc	  on
-	  MATLABDynamicMemAllocThreshold 65536
-	  CustomCodeFunctionArrayLayout	[]
-	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
-	  CustomCodeUndefinedFunction "UseInterfaceOnly"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  19
-	  Version		  "19.1.1"
+	  $ObjectID		  15
+	  Version		  "1.15.0"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    16
@@ -845,11 +511,7 @@ Model {
 	    Cell		    "CodeProfilingInstrumentation"
 	    PropName		    "DisabledProps"
 	  }
-	  Description		  ""
 	  SystemTargetFile	  "grt.tlc"
-	  HardwareBoard		  "None"
-	  ShowCustomHardwareApp	  off
-	  ShowEmbeddedHardwareApp off
 	  TLCOptions		  ""
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
@@ -858,10 +520,11 @@ Model {
 	  PackageName		  ""
 	  TemplateMakefile	  "grt_default_tmf"
 	  PostCodeGenCommand	  ""
+	  Description		  ""
 	  GenerateReport	  off
+	  SaveLog		  off
 	  RTWVerbose		  on
 	  RetainRTWFile		  off
-	  RTWBuildHooks		  []
 	  ProfileTLC		  off
 	  TLCDebug		  off
 	  TLCCoverage		  off
@@ -873,15 +536,10 @@ Model {
 	  CustomInclude		  ""
 	  CustomSource		  ""
 	  CustomLibrary		  ""
-	  CustomDefine		  ""
-	  CustomBLASCallback	  ""
-	  CustomLAPACKCallback	  ""
-	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
 	  CustomTerminator	  ""
 	  Toolchain		  "Automatically locate an installed toolchain"
 	  BuildConfiguration	  "Faster Builds"
-	  CustomToolchainOptions  []
 	  IncludeHyperlinkInReport off
 	  LaunchReport		  off
 	  PortableWordSizes	  off
@@ -889,7 +547,7 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation "off"
+	  CodeProfilingInstrumentation off
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
@@ -903,7 +561,6 @@ Model {
 	  GenerateCodeReplacementReport	off
 	  GenerateMissedCodeReplacementReport off
 	  RTWCompilerOptimization "off"
-	  ObjectivePriorities	  []
 	  RTWCustomCompilerOptimizations ""
 	  CheckMdlBeforeBuild	  "Off"
 	  SharedConstantsCachingThreshold 1024
@@ -911,11 +568,11 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      20
-	      Version		      "19.1.1"
+	      $ObjectID		      16
+	      Version		      "1.15.0"
 	      Array {
 		Type			"Cell"
-		Dimension		29
+		Dimension		24
 		Cell			"IgnoreCustomStorageClasses"
 		Cell			"ParameterTuningSideEffectCode"
 		Cell			"IgnoreTestpoints"
@@ -940,73 +597,54 @@ Model {
 		Cell			"CustomSymbolStrMacro"
 		Cell			"CustomSymbolStrUtil"
 		Cell			"ReqsInCode"
-		Cell			"BlockCommentType"
-		Cell			"CustomSymbolStrModelFcn"
-		Cell			"CustomSymbolStrEmxType"
-		Cell			"CustomSymbolStrEmxFcn"
-		Cell			"CustomUserTokenString"
 		PropName		"DisabledProps"
 	      }
-	      Description	      ""
-	      Components	      []
-	      Comment		      ""
 	      ForceParamTrailComments off
 	      GenerateComments	      on
 	      CommentStyle	      "Auto"
 	      IgnoreCustomStorageClasses on
 	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
 	      MaxIdLength	      31
 	      PreserveName	      off
 	      PreserveNameWithParent  off
 	      ShowEliminatedStatement off
 	      OperatorAnnotations     off
+	      IncAutoGenComments      off
 	      SimulinkDataObjDesc     off
 	      SFDataObjDesc	      off
 	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
 	      MangleLength	      1
-	      SharedChecksumLength    8
 	      CustomSymbolStrGlobalVar "$R$N$M"
 	      CustomSymbolStrType     "$N$R$M_T"
 	      CustomSymbolStrField    "$N$M"
 	      CustomSymbolStrFcn      "$R$N$M$F"
-	      CustomSymbolStrModelFcn "$R$N"
 	      CustomSymbolStrFcnArg   "rt$I$N$M"
 	      CustomSymbolStrBlkIO    "rtb_$N$M"
 	      CustomSymbolStrTmpVar   "$N$M"
 	      CustomSymbolStrMacro    "$R$N$M"
 	      CustomSymbolStrUtil     "$N$C"
-	      CustomSymbolStrEmxType  "emxArray_$M$N"
-	      CustomSymbolStrEmxFcn   "emx$M$N"
-	      CustomUserTokenString   ""
-	      CustomCommentsFcn	      ""
 	      DefineNamingRule	      "None"
-	      DefineNamingFcn	      ""
 	      ParamNamingRule	      "None"
-	      ParamNamingFcn	      ""
 	      SignalNamingRule	      "None"
-	      SignalNamingFcn	      ""
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
-	      BlockCommentType	      "BlockPathComment"
-	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
-	      InternalIdentifierFile  ""
 	      InternalIdentifier      "Shortened"
 	      InlinedPrmAccess	      "Literals"
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
-	      ReservedNameArray	      []
-	      EnumMemberNameClash     "error"
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      21
-	      Version		      "19.1.1"
+	      $ObjectID		      17
+	      Version		      "1.15.0"
 	      Array {
 		Type			"Cell"
-		Dimension		17
+		Dimension		13
 		Cell			"GeneratePreprocessorConditionals"
 		Cell			"IncludeMdlTerminateFcn"
 		Cell			"SuppressErrorStatus"
@@ -1020,14 +658,8 @@ Model {
 		Cell			"SupportAbsoluteTime"
 		Cell			"SupportContinuousTime"
 		Cell			"SupportNonInlinedSFcns"
-		Cell			"ExistingSharedCode"
-		Cell			"RemoveDisableFunc"
-		Cell			"RemoveResetFunc"
-		Cell			"PreserveStateflowLocalDataDimensions"
 		PropName		"DisabledProps"
 	      }
-	      Description	      ""
-	      Components	      []
 	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
@@ -1035,12 +667,11 @@ Model {
 	      TargetLangStandard      "C89/C90 (ANSI)"
 	      CodeReplacementLibrary  "None"
 	      UtilityFuncGeneration   "Auto"
-	      MultiwordTypeDef	      "System defined"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
 	      MultiwordLength	      2048
-	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
-	      ExistingSharedCode      ""
 	      GenerateSampleERTMain   off
 	      GenerateTestInterfaces  off
 	      ModelReferenceCompliant on
@@ -1051,8 +682,8 @@ Model {
 	      GeneratePreprocessorConditionals "Disable all"
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
-	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
 	      SupportAbsoluteTime     on
@@ -1060,36 +691,21 @@ Model {
 	      MatFileLogging	      on
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
-	      PurelyIntegerCode	      off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
+	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
-	      RemoveDisableFunc	      off
-	      RemoveResetFunc	      off
 	      SupportVariableSizeSignals off
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
-	      PreserveStateflowLocalDataDimensions off
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    on
 	      AutosarCompliant	      off
-	      MDXCompliant	      off
 	      GRTInterface	      off
 	      GenerateAllocFcn	      off
-	      UseToolchainInfoCompliant	on
 	      GenerateSharedConstants on
-	      CoderGroups	      []
-	      AccessMethods	      []
-	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
-	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
-	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
-	      ArrayLayout	      "Column-major"
-	      UnsupportedSFcnMsg      "error"
-	      ERTHeaderFileRootName   "$R$E"
-	      ERTSourceFileRootName   "$R$E"
-	      ERTDataFileRootName     "$R_data"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -1097,7 +713,6 @@ Model {
 	      ExtModeStaticAllocSize  1000000
 	      ExtModeTransport	      0
 	      ExtModeMexFile	      "ext_comm"
-	      ExtModeMexArgs	      ""
 	      ExtModeIntrfLevel	      "Level1"
 	      RTWCAPISignals	      off
 	      RTWCAPIParams	      off
@@ -1109,68 +724,28 @@ Model {
 	    PropName		    "Components"
 	  }
 	}
-	SlCovCC.ConfigComp {
-	  $ObjectID		  22
-	  Version		  "19.1.1"
-	  DisabledProps		  []
-	  Description		  "Simulink Coverage Configuration Component"
-	  Components		  []
-	  Name			  "Simulink Coverage"
-	  CovEnable		  off
-	  CovScope		  "EntireSystem"
-	  CovIncludeTopModel	  on
-	  RecordCoverage	  off
-	  CovPath		  "/"
-	  CovSaveName		  "covdata"
-	  CovCompData		  ""
-	  CovMetricSettings	  "dw"
-	  CovFilter		  ""
-	  CovHTMLOptions	  ""
-	  CovNameIncrementing	  off
-	  CovHtmlReporting	  on
-	  CovForceBlockReductionOff on
-	  CovEnableCumulative	  on
-	  CovSaveCumulativeToWorkspaceVar on
-	  CovSaveSingleToWorkspaceVar on
-	  CovCumulativeVarName	  "covCumulativeData"
-	  CovCumulativeReport	  off
-	  CovSaveOutputData	  on
-	  CovOutputDir		  "slcov_output/$ModelName$"
-	  CovDataFileName	  "$ModelName$_cvdata"
-	  CovShowResultsExplorer  on
-	  CovReportOnPause	  on
-	  CovModelRefEnable	  "off"
-	  CovModelRefExcluded	  ""
-	  CovExternalEMLEnable	  off
-	  CovSFcnEnable		  on
-	  CovBoundaryAbsTol	  1e-05
-	  CovBoundaryRelTol	  0.01
-	  CovUseTimeInterval	  off
-	  CovStartTime		  0
-	  CovStopTime		  0
-	  CovMcdcMode		  "Masking"
-	}
 	PropName		"Components"
       }
       Name		      "Configuration"
-      CurrentDlgPage	      "Data Import//Export"
-      ConfigPrmDlgPosition    [ 258, 90, 1342, 735 ]
       ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Data Import//Export"
+      ConfigPrmDlgPosition     [ 258, 90, 1342, 735 ] 
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    11
+    $ObjectID		    7
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    23
+    $ObjectID		    18
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
     DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
     DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
   }
   ExplicitPartitioning	  off
   WSDataSource		  "MAT-File"
@@ -1184,7 +759,6 @@ Model {
     FontWeight		    "normal"
     FontAngle		    "normal"
     ShowName		    on
-    HideAutomaticName	    on
     BlockRotation	    0
     BlockMirror		    off
   }
@@ -1198,12 +772,7 @@ Model {
     FontSize		    10
     FontWeight		    "normal"
     FontAngle		    "normal"
-    MarkupType		    "model"
     UseDisplayTextAsClickCallback off
-    AnnotationType	    "note_annotation"
-    FixedHeight		    off
-    FixedWidth		    off
-    Interpreter		    "off"
   }
   LineDefaults {
     FontName		    "Helvetica"
@@ -1214,8 +783,8 @@ Model {
   MaskDefaults {
     SelfModifiable	    "off"
     IconFrame		    "on"
-    IconOpaque		    "opaque"
-    RunInitForIconRedraw    "analyze"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
     IconRotate		    "none"
     PortRotate		    "default"
     IconUnits		    "autoscale"
@@ -1233,12 +802,16 @@ Model {
   BlockParameterDefaults {
     Block {
       BlockType		      BusCreator
+      Inputs		      "4"
       DisplayOption	      "none"
       OutDataTypeStr	      "Inherit: auto"
       NonVirtualBus	      off
+      InheritFromInputs	      on
     }
     Block {
       BlockType		      BusSelector
+      OutputSignals	      "signal1,signal2,signal3"
+      OutputAsBus	      off
     }
     Block {
       BlockType		      Constant
@@ -1303,7 +876,6 @@ Model {
       OutDataTypeStr	      "Inherit: auto"
       LockScale		      off
       BusOutputAsStruct	      off
-      Unit		      "inherit"
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
@@ -1329,20 +901,14 @@ Model {
       OutDataTypeStr	      "Inherit: auto"
       LockScale		      off
       BusOutputAsStruct	      off
-      Unit		      "inherit"
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
       SignalType	      "auto"
       SamplingMode	      "auto"
-      EnsureOutportIsVirtual  off
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
-      MustResolveToSignalObject	off
-      OutputWhenUnConnected   off
-      OutputWhenUnconnectedValue "0"
-      VectorParamsAs1DForOutWhenUnconnected on
     }
     Block {
       BlockType		      Product
@@ -1367,7 +933,7 @@ Model {
       TreatAsAtomicUnit	      off
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
-      ScheduleAs	      "Sample time"
+      CheckFcnCallInpInsideContextMsg off
       SystemSampleTime	      "-1"
       RTWSystemCode	      "Auto"
       RTWFcnNameOpts	      "Auto"
@@ -1386,18 +952,10 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
-      VariantControlMode      "Expression"
       Variant		      off
       GeneratePreprocessorConditionals off
-      AllowZeroVariantControls off
-      PropagateVariantConditions off
-      TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
       IsWebBlock	      off
-      IsObserver	      off
-      Latency		      "0"
-      AutoFrameSizeCalculation off
-      IsWebBlockPanel	      off
     }
     Block {
       BlockType		      Sum
@@ -1422,10 +980,7 @@ Model {
   System {
     Name		    "AGTF30_eng"
     Location		    [232, 31, 1146, 760]
-    Open		    off
-    PortBlocksUseCompactNotation off
-    SetExecutionDomain	    off
-    ExecutionDomainType	    "Deduce"
+    Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1438,8 +993,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "300"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "1279"
-    SimulinkSubDomain	    "Simulink"
+    SIDHighWatermark	    "1272"
     Block {
       BlockType		      Inport
       Name		      "Sys_In"
@@ -1478,9 +1032,6 @@ Model {
 	Name			"Engine"
 	Location		[232, 31, 1146, 760]
 	Open			off
-	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1491,13 +1042,12 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
-	SimulinkSubDomain	"Simulink"
+	ZoomFactor		"35"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Sys_In"
 	  SID			  "537"
-	  Position		  [115, 903, 145, 917]
+	  Position		  [115, 893, 145, 907]
 	  ZOrder		  812
 	  IconDisplay		  "Port number"
 	}
@@ -1530,15 +1080,14 @@ Model {
 	  SourceBlock		  "Lib_Turbo_Ambient_TMATS/Ambient"
 	  SourceType		  "T-MATS: Ambient Library Block"
 	  ContentPreviewEnabled	  off
-	  X_A_AltVec_M		  "5000*[-1 0 1 2 3 4 5 6 7 8 9 10 12 14 16]"
-	  T_A_TsVec_M		  "[536.51 518.67 500.84 483.03 465.22 447.41 429.62 411.84 394.06 389.97 389.97 389.97 389.97 392.25 "
-	  "397.69]"
-	  T_A_PsVec_M		  "[17.554 14.696 12.228 10.108 8.297 6.759 5.461 4.373 3.468 2.73 2.149 1.692 1.049 0.651 0.406]"
-	  AFARc_M		  "0"
-	  X_A_FARVec_M		  "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-	  T_A_RtArray_M		  "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-	  Y_A_TVec_M		  "[300 10000]"
-	  T_A_gammaArray_M	  "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
+	  X_A_AltVec_M		  5000*[-1 0 1 2 3 4 5 6 7 8 9 10 12 14 16]
+	  T_A_TsVec_M		  [536.51 518.67 500.84 483.03 465.22 447.41 429.62 411.84 394.06 389.97 389.97 389.97 389.97 392.25 397.69]
+	  T_A_PsVec_M		  [17.554 14.696 12.228 10.108 8.297 6.759 5.461 4.373 3.468 2.73 2.149 1.692 1.049 0.651 0.406]
+	  AFARc_M		  0
+	  X_A_FARVec_M		  [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+	  T_A_RtArray_M		  [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+	  Y_A_TVec_M		  [300 10000]
+	  T_A_gammaArray_M	  [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
 	}
 	Block {
 	  BlockType		  From
@@ -1599,16 +1148,13 @@ Model {
 	  Name			  "BackEng"
 	  SID			  "181"
 	  Ports			  [5, 4]
-	  Position		  [995, 259, 1095, 361]
+	  Position		  [995, 249, 1095, 351]
 	  ZOrder		  674
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "BackEng"
 	    Location		    [232, 31, 1146, 760]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1620,7 +1166,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "84"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "BldFlw"
@@ -1679,7 +1224,6 @@ Model {
 	      ShowName		      off
 	      Inputs		      "7"
 	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -1692,22 +1236,22 @@ Model {
 	      SourceBlock	      "Lib_Turbo_Nozzle_TMATS/Nozzle"
 	      SourceType	      "T-MATS: Nozzle Library Block"
 	      ContentPreviewEnabled   off
-	      SWType_M		      "Convergent"
+	      SWType_M		      Convergent
 	      N_TArea_M		      "MWS.NozCor.Ath"
-	      N_EArea_M		      "110.7"
-	      N_FL_M		      "0.00"
-	      X_N_TtVec2_M	      "[300 10000]"
-	      T_N_TGArray_M	      "[1 1]"
-	      X_N_PEQPaVec_M	      "[0 10000]"
-	      T_N_CdThArray_M	      "[1 1]"
-	      T_N_CvArray_M	      "[1 1]"
+	      N_EArea_M		      110.7
+	      N_FL_M		      0.00
+	      X_N_TtVec2_M	      [300 10000]
+	      T_N_TGArray_M	      [1 1]
+	      X_N_PEQPaVec_M	      [0 10000]
+	      T_N_CdThArray_M	      [1 1]
+	      T_N_CvArray_M	      [1 1]
 	      CfgEn_M		      on
 	      T_N_CfgArray_M	      "[1 1]*MWS.NozCor.Cfg"
-	      X_N_FARVec_M	      "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-	      T_N_RtArray_M	      "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-	      Y_N_TtVec_M	      "[300 10000]"
-	      T_N_MAP_gammaArray_M    "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
-	      iDesign_M		      "2"
+	      X_N_FARVec_M	      [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+	      T_N_RtArray_M	      [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+	      Y_N_TtVec_M	      [300 10000]
+	      T_N_MAP_gammaArray_M    [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
+	      iDesign_M		      2
 	      WDes_M		      "MWS.NozCor.WDes"
 	      FVar_M		      "strcat('iDes_',stripchar_TMATS(gcb),'.bin')"
 	    }
@@ -1734,7 +1278,7 @@ Model {
 	      Ports		      [4, 4]
 	      Position		      [375, 318, 525, 467]
 	      ZOrder		      557
-	      LibraryVersion	      "1.492"
+	      LibraryVersion	      "1.485"
 	      SourceBlock	      "Lib_Turbo_TurbineNPSS_TMATS/Turbine_NPSS"
 	      SourceType	      "T-MATS: Turbine, NPSS Library Block"
 	      ContentPreviewEnabled   off
@@ -1746,18 +1290,17 @@ Model {
 	      s_T_Wc_M		      "MWS.LPT.s_Wc"
 	      s_T_PR_M		      "MWS.LPT.s_PR"
 	      s_T_Eff_M		      "MWS.LPT.s_Eff"
-	      ConfigNPSS_M	      "1"
-	      Scale_M		      "none"
+	      ConfigNPSS_M	      1
+	      Scale_M		      none
 	      CFlwEn_M		      on
 	      T_CoolFlwPos_M	      "MWS.LPT.CWPos"
-	      iDesign_M		      "2"
+	      iDesign_M		      2
 	      NcDes_M		      "MWS.LPT.NcMapDes"
 	      EffDes_M		      "MWS.LPT.EffDes"
 	      PRDes_M		      "MWS.LPT.PRMapDes"
 	      NDes_M		      "MWS.LPT.NDes"
 	      FVar_M		      "strcat('iDes_',stripchar_TMATS(gcb),'.bin')"
 	      BlkNm_M		      "double(gcb)"
-	      HP_M		      off
 	    }
 	    Block {
 	      BlockType		      Goto
@@ -1780,6 +1323,8 @@ Model {
 		PortNumber		1
 		Name			"N_LPT"
 		PropagatedSignals	"Nmech"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1803,6 +1348,8 @@ Model {
 		PortNumber		1
 		Name			"Trq_LPT"
 		PropagatedSignals	"Trq"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1825,6 +1372,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"LPT_Data"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1847,6 +1396,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S48"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1860,6 +1411,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S5"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1873,6 +1426,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S7"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1905,6 +1460,8 @@ Model {
 		PortNumber		1
 		Name			"Fg_Core"
 		PropagatedSignals	"Fg"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1926,7 +1483,7 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		24
+		$ObjectID		19
 		$ClassName		"Simulink.Mask"
 		Type			"T-MATS: Duct Library Block"
 		Description		"This block simulates the performance of a duct using basic fluid dynamic equations and properties.\n"
@@ -1935,21 +1492,21 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    25
+		    $ObjectID		    20
 		    Type		    "edit"
 		    Name		    "dP_M"
 		    Prompt		    "dP_M - Delta Pressure [frac lost]"
 		    Value		    "MWS.Duct.D45"
 		  }
 		  Object {
-		    $ObjectID		    26
+		    $ObjectID		    21
 		    Type		    "edit"
 		    Name		    "MNdes_M"
 		    Prompt		    "MNdes_M - Mach Number Design"
 		    Value		    "MWS.Duct.MNdes45"
 		  }
 		  Object {
-		    $ObjectID		    27
+		    $ObjectID		    22
 		    Type		    "edit"
 		    Name		    "Ath_M"
 		    Prompt		    "Ath_M - Throat Area [in2]"
@@ -1962,9 +1519,6 @@ Model {
 		Name			"duct45"
 		Location		[343, 39, 1464, 728]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -1976,7 +1530,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "GasPthCharIn"
@@ -1995,10 +1548,11 @@ Model {
 		  ZOrder		  342
 		  ShowName		  off
 		  OutputSignals		  "MN"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<MN>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2012,7 +1566,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "5"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  Constant
@@ -2054,22 +1607,32 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "W"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "ht"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Tt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Gas Path total Pressure; Pt[psia]"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "FAR"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2172,6 +1735,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2188,6 +1753,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2210,17 +1777,17 @@ Model {
 		  Ports			  [1, 1]
 		  Position		  [100, 584, 215, 636]
 		  ZOrder		  341
-		  LibraryVersion	  "1.361"
+		  LibraryVersion	  "1.360"
 		  SourceBlock		  "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
 		  SourceType		  "T-MATS: Static Calculation Library Block"
 		  ContentPreviewEnabled	  off
 		  ST_M			  off
-		  Ath_M			  "Ath_M"
-		  MN_M			  "0.45"
-		  X_FARVec_M		  "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-		  Y_TtVec_M		  "[300 10000]"
-		  T_RtArray_M		  "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-		  T_gammaArray_M	  "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
+		  Ath_M			  Ath_M
+		  MN_M			  0.45
+		  X_FARVec_M		  [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+		  Y_TtVec_M		  [300 10000]
+		  T_RtArray_M		  [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+		  T_gammaArray_M	  [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
 		}
 		Block {
 		  BlockType		  Sum
@@ -2448,8 +2015,10 @@ Model {
 		Annotation {
 		  SID			  "988"
 		  Name			  "dP = dPdes * (MN/MNdes)^2"
-		  Position		  [348, 549, 477, 563]
+		  Position		  [348, 549, 482, 564]
 		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
 		  HorizontalAlignment	  "left"
 		  VerticalAlignment	  "top"
 		  ZOrder		  -1
@@ -2466,7 +2035,7 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		28
+		$ObjectID		23
 		$ClassName		"Simulink.Mask"
 		Type			"T-MATS: Duct Library Block"
 		Description		"This block simulates the performance of a duct using basic fluid dynamic equations and properties.\n"
@@ -2475,21 +2044,21 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    29
+		    $ObjectID		    24
 		    Type		    "edit"
 		    Name		    "dP_M"
 		    Prompt		    "dP_M - Delta Pressure [frac lost]"
 		    Value		    "MWS.Duct.D5"
 		  }
 		  Object {
-		    $ObjectID		    30
+		    $ObjectID		    25
 		    Type		    "edit"
 		    Name		    "MNdes_M"
 		    Prompt		    "MNdes_M - Mach Number Design"
 		    Value		    "MWS.Duct.MNdes5"
 		  }
 		  Object {
-		    $ObjectID		    31
+		    $ObjectID		    26
 		    Type		    "edit"
 		    Name		    "Ath_M"
 		    Prompt		    "Ath_M - Throat Area [in2]"
@@ -2502,9 +2071,6 @@ Model {
 		Name			"duct5"
 		Location		[343, 39, 1464, 728]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2516,7 +2082,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "GasPthCharIn"
@@ -2535,10 +2100,11 @@ Model {
 		  ZOrder		  342
 		  ShowName		  off
 		  OutputSignals		  "MN"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<MN>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2552,7 +2118,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "5"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  Constant
@@ -2594,22 +2159,32 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "W"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "ht"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Tt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Gas Path total Pressure; Pt[psia]"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "FAR"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2712,6 +2287,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2728,6 +2305,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -2750,17 +2329,17 @@ Model {
 		  Ports			  [1, 1]
 		  Position		  [100, 584, 215, 636]
 		  ZOrder		  341
-		  LibraryVersion	  "1.361"
+		  LibraryVersion	  "1.360"
 		  SourceBlock		  "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
 		  SourceType		  "T-MATS: Static Calculation Library Block"
 		  ContentPreviewEnabled	  off
 		  ST_M			  off
-		  Ath_M			  "Ath_M"
-		  MN_M			  "0.45"
-		  X_FARVec_M		  "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-		  Y_TtVec_M		  "[300 10000]"
-		  T_RtArray_M		  "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-		  T_gammaArray_M	  "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
+		  Ath_M			  Ath_M
+		  MN_M			  0.45
+		  X_FARVec_M		  [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+		  Y_TtVec_M		  [300 10000]
+		  T_RtArray_M		  [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+		  T_gammaArray_M	  [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
 		}
 		Block {
 		  BlockType		  Sum
@@ -2988,8 +2567,10 @@ Model {
 		Annotation {
 		  SID			  "1014"
 		  Name			  "dP = dPdes * (MN/MNdes)^2"
-		  Position		  [348, 549, 477, 563]
+		  Position		  [348, 549, 482, 564]
 		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
 		  HorizontalAlignment	  "left"
 		  VerticalAlignment	  "top"
 		  ZOrder		  -1
@@ -3268,6 +2849,8 @@ Model {
 	      "-indent:0px;\"><span style=\" font-size:28pt;\">LPT to CoreNozzle</span></p></body></html>"
 	      Position		      [505, 19, 817, 64]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -3284,10 +2867,11 @@ Model {
 	  ZOrder		  909
 	  ShowName		  off
 	  OutputSignals		  "Fdrag"
-	  OutputAsBus		  off
 	  Port {
 	    PortNumber		    1
 	    Name		    "<Fdrag>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -3299,10 +2883,11 @@ Model {
 	  ZOrder		  1830
 	  ShowName		  off
 	  OutputSignals		  "Fg_Byp"
-	  OutputAsBus		  off
 	  Port {
 	    PortNumber		    1
 	    Name		    "<Fg_Byp>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -3314,10 +2899,11 @@ Model {
 	  ZOrder		  1833
 	  ShowName		  off
 	  OutputSignals		  "Fg_Core"
-	  OutputAsBus		  off
 	  Port {
 	    PortNumber		    1
 	    Name		    "<Fg_Core>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -3332,9 +2918,6 @@ Model {
 	    Name		    "Bypass"
 	    Location		    [232, 31, 1146, 760]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3346,7 +2929,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "141"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "VAFNdmd"
@@ -3384,7 +2966,6 @@ Model {
 	      ShowName		      off
 	      Inputs		      "2"
 	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -3397,24 +2978,24 @@ Model {
 	      SourceBlock	      "Lib_Turbo_NozzleVar_TMATS/NozzleVar"
 	      SourceType	      "T-MATS: Nozzle,Var Library Block"
 	      ContentPreviewEnabled   off
-	      SWType_M		      "1"
-	      N_FL_M		      "0.00"
-	      X_N_TtVec2_M	      "[300 10000]"
-	      T_N_TGArray_M	      "[1 1]"
-	      X_N_PEQPaVec_M	      "[0 10000]"
-	      T_N_CdThArray_M	      "[1 1]"
-	      T_N_CvArray_M	      "[1 1]"
+	      SWType_M		      1
+	      N_FL_M		      0.00
+	      X_N_TtVec2_M	      [300 10000]
+	      T_N_TGArray_M	      [1 1]
+	      X_N_PEQPaVec_M	      [0 10000]
+	      T_N_CdThArray_M	      [1 1]
+	      T_N_CvArray_M	      [1 1]
 	      CfgEn_M		      on
 	      T_N_CfgArray_M	      "[1 1]* MWS.NozByp.Cfg"
-	      X_N_FARVec_M	      "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-	      T_N_RtArray_M	      "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-	      Y_N_TtVec_M	      "[300 10000]"
-	      T_N_MAP_gammaArray_M    "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
-	      iDesign_M		      "2"
+	      X_N_FARVec_M	      [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+	      T_N_RtArray_M	      [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+	      Y_N_TtVec_M	      [300 10000]
+	      T_N_MAP_gammaArray_M    [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
+	      iDesign_M		      2
 	      WDes_M		      "MWS.NozByp.WDes"
 	      FVar_M		      "strcat('iDes_',stripchar_TMATS(gcb),'.bin')"
-	      N_TArea_M		      "0"
-	      N_EArea_M		      "0"
+	      N_TArea_M		      0
+	      N_EArea_M		      0
 	    }
 	    Block {
 	      BlockType		      Terminator
@@ -3443,6 +3024,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S17"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -3466,6 +3049,8 @@ Model {
 		PortNumber		1
 		Name			"Fg_Byp"
 		PropagatedSignals	"Fg"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -3487,7 +3072,7 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		32
+		$ObjectID		27
 		$ClassName		"Simulink.Mask"
 		Type			"T-MATS: Duct Library Block"
 		Description		"This block simulates the performance of a duct using basic fluid dynamic equations and properties.\n"
@@ -3496,21 +3081,21 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    33
+		    $ObjectID		    28
 		    Type		    "edit"
 		    Name		    "dP_M"
 		    Prompt		    "dP_M - Delta Pressure [frac lost]"
 		    Value		    "MWS.Duct.D17"
 		  }
 		  Object {
-		    $ObjectID		    34
+		    $ObjectID		    29
 		    Type		    "edit"
 		    Name		    "MNdes_M"
 		    Prompt		    "MNdes_M - Mach Number Design"
 		    Value		    "MWS.Duct.MNdes17"
 		  }
 		  Object {
-		    $ObjectID		    35
+		    $ObjectID		    30
 		    Type		    "edit"
 		    Name		    "Ath_M"
 		    Prompt		    "Ath_M - Throat Area [in2]"
@@ -3523,9 +3108,6 @@ Model {
 		Name			"duct17"
 		Location		[1858, 212, 3152, 1077]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -3537,7 +3119,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "GasPthCharIn"
@@ -3556,10 +3137,11 @@ Model {
 		  ZOrder		  342
 		  ShowName		  off
 		  OutputSignals		  "MN"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<MN>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -3573,7 +3155,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "5"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  Constant
@@ -3615,22 +3196,32 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "W"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "ht"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Tt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Gas Path total Pressure; Pt[psia]"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "FAR"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -3733,6 +3324,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -3749,6 +3342,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -3771,17 +3366,17 @@ Model {
 		  Ports			  [1, 1]
 		  Position		  [100, 584, 215, 636]
 		  ZOrder		  341
-		  LibraryVersion	  "1.361"
+		  LibraryVersion	  "1.360"
 		  SourceBlock		  "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
 		  SourceType		  "T-MATS: Static Calculation Library Block"
 		  ContentPreviewEnabled	  off
 		  ST_M			  off
-		  Ath_M			  "Ath_M"
-		  MN_M			  "0.45"
-		  X_FARVec_M		  "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-		  Y_TtVec_M		  "[300 10000]"
-		  T_RtArray_M		  "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-		  T_gammaArray_M	  "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
+		  Ath_M			  Ath_M
+		  MN_M			  0.45
+		  X_FARVec_M		  [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+		  Y_TtVec_M		  [300 10000]
+		  T_RtArray_M		  [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+		  T_gammaArray_M	  [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
 		}
 		Block {
 		  BlockType		  Sum
@@ -4009,8 +3604,10 @@ Model {
 		Annotation {
 		  SID			  "936"
 		  Name			  "dP = dPdes * (MN/MNdes)^2"
-		  Position		  [348, 549, 477, 563]
+		  Position		  [348, 549, 482, 564]
 		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
 		  HorizontalAlignment	  "left"
 		  VerticalAlignment	  "top"
 		  ZOrder		  -1
@@ -4151,17 +3748,14 @@ Model {
 	  BlockType		  SubSystem
 	  Name			  "Core"
 	  SID			  "132"
-	  Ports			  [6, 7]
-	  Position		  [670, 259, 770, 401]
+	  Ports			  [5, 7]
+	  Position		  [670, 257, 770, 383]
 	  ZOrder		  650
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Core"
 	    Location		    [232, 31, 1146, 760]
-	    Open		    on
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
+	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -4172,8 +3766,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
-	    SimulinkSubDomain	    "Simulink"
+	    ZoomFactor		    "49"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Wf"
@@ -4187,7 +3780,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "FlwIn"
 	      SID		      "133"
-	      Position		      [105, 668, 135, 682]
+	      Position		      [105, 673, 135, 687]
 	      ZOrder		      650
 	      ForegroundColor	      "blue"
 	      Port		      "2"
@@ -4224,15 +3817,6 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
-	      BlockType		      Inport
-	      Name		      "Alpha"
-	      SID		      "1275"
-	      Position		      [265, 283, 295, 297]
-	      ZOrder		      1917
-	      Port		      "6"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
 	      BlockType		      Reference
 	      Name		      "Burner"
 	      SID		      "12"
@@ -4246,7 +3830,7 @@ Model {
 	      LHVEn_M		      on
 	      LHV_M		      "MWS.Burn.LHV"
 	      Eff_M		      "MWS.Burn.Eff"
-	      hFuel_M		      "-1200"
+	      hFuel_M		      -1200
 	      dPnormBurner_M	      "MWS.Burn.dPqP_dmd"
 	    }
 	    Block {
@@ -4287,51 +3871,6 @@ Model {
 	      ShowName		      off
 	      Inputs		      "12"
 	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "CompressorVG"
-	      SID		      "1273"
-	      Ports		      [4, 6]
-	      Position		      [190, 655, 345, 800]
-	      ZOrder		      1915
-	      LibraryVersion	      "1.532"
-	      SourceBlock	      "Lib_Turbo_CompressorVG_TMATS/CompressorVG"
-	      SourceType	      "T-MATS: CompressorVG Library Block"
-	      ContentPreviewEnabled   on
-	      X_C_RlineVec_M	      "MWS.HPC.RVec"
-	      Z_C_AlphaVec_M	      "Alpha"
-	      Y_C_Map_NcVec_M	      "MWS.HPC.NcVec"
-	      T_C_Map_WcArray_M	      "WcMap"
-	      T_C_Map_PRArray_M	      "PRMap"
-	      T_C_Map_EffArray_M      "EffMap"
-	      s_C_Nc_M		      "MWS.HPC.s_Nc"
-	      s_C_Wc_M		      "MWS.HPC.s_Wc"
-	      s_C_PR_M		      "MWS.HPC.s_PR"
-	      s_C_Eff_M		      "MWS.HPC.s_Eff"
-	      SL_M		      off
-	      Scale_M		      "none"
-	      CBLDEN_M		      off
-	      C_CBD_M		      "0"
-	      C_CBFht_M		      "0.5"
-	      C_CBFPt_M		      "0.5"
-	      FBLDEN_M		      on
-	      C_FBD_M		      "MWS.HPC.FBD"
-	      C_BFht_M		      "MWS.HPC.BFht"
-	      C_BFPt_M		      "MWS.HPC.BFPt"
-	      DefSMEn_M		      on
-	      SRline_M		      "1"
-	      X_C_Map_WcSurgeVec_M    "ones(4,2)"
-	      T_C_Map_PRSurgeVec_M    "ones(4,2)"
-	      iDesign_M		      "2"
-	      NcDes_M		      "MWS.HPC.NcDesMap"
-	      EffDes_M		      "MWS.HPC.EffDes"
-	      PRDes_M		      "MWS.HPC.PRDes"
-	      RlineDes_M	      "2"
-	      FVar_M		      "MWS.HPC.RlineDesMap"
-	      BlkNm_M		      "double(gcb)"
-	      HP_M		      off
 	    }
 	    Block {
 	      BlockType		      Demux
@@ -4345,20 +3884,47 @@ Model {
 	      DisplayOption	      "bar"
 	    }
 	    Block {
-	      BlockType		      From
-	      Name		      "From"
-	      SID		      "1277"
-	      Position		      [110, 738, 150, 752]
-	      ZOrder		      1919
-	      GotoTag		      "Alpha"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto"
-	      SID		      "1276"
-	      Position		      [320, 282, 370, 298]
-	      ZOrder		      1918
-	      GotoTag		      "Alpha"
+	      BlockType		      Reference
+	      Name		      "HPC"
+	      SID		      "9"
+	      Ports		      [3, 6]
+	      Position		      [195, 655, 350, 800]
+	      ZOrder		      342
+	      LibraryVersion	      "1.524"
+	      SourceBlock	      "Lib_Turbo_Compressor_TMATS/Compressor"
+	      SourceType	      "T-MATS: Compressor Library Block"
+	      ContentPreviewEnabled   off
+	      X_C_RlineVec_M	      "MWS.HPC.RVec"
+	      Z_C_AlphaVec_M	      1
+	      Y_C_Map_NcVec_M	      "MWS.HPC.NcVec"
+	      T_C_Map_WcArray_M	      "MWS.HPC.WcArray"
+	      T_C_Map_PRArray_M	      "MWS.HPC.PRArray"
+	      T_C_Map_EffArray_M      "MWS.HPC.EffArray"
+	      s_C_Nc_M		      "MWS.HPC.s_Nc"
+	      s_C_Wc_M		      "MWS.HPC.s_Wc"
+	      s_C_PR_M		      "MWS.HPC.s_PR"
+	      s_C_Eff_M		      "MWS.HPC.s_Eff"
+	      SL_M		      off
+	      Scale_M		      none
+	      CBLDEN_M		      off
+	      C_CBD_M		      0
+	      C_CBFht_M		      0.5
+	      C_CBFPt_M		      0.5
+	      FBLDEN_M		      on
+	      C_FBD_M		      "MWS.HPC.FBD"
+	      C_BFht_M		      "MWS.HPC.BFht"
+	      C_BFPt_M		      "MWS.HPC.BFPt"
+	      DefSMEn_M		      off
+	      SRline_M		      1
+	      X_C_Map_WcSurgeVec_M    "MWS.HPC.SM_WcVec"
+	      T_C_Map_PRSurgeVec_M    "MWS.HPC.SM_PRVec"
+	      iDesign_M		      2
+	      NcDes_M		      "MWS.HPC.NcDesMap"
+	      EffDes_M		      "MWS.HPC.EffDes"
+	      PRDes_M		      "MWS.HPC.PRDes"
+	      RlineDes_M	      "MWS.HPC.RlineDesMap"
+	      FVar_M		      "strcat('iDes_',stripchar_TMATS(gcb),'.bin')"
+	      BlkNm_M		      "double(gcb)"
 	    }
 	    Block {
 	      BlockType		      From
@@ -4432,6 +3998,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"LPT_ext_bld"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4446,6 +4014,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"HPT_inlet_bld"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4460,6 +4030,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"HPT_exit_bld"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4486,7 +4058,7 @@ Model {
 	      BlockType		      From
 	      Name		      "HPC_Rline1"
 	      SID		      "105"
-	      Position		      [95, 704, 165, 716]
+	      Position		      [105, 724, 175, 736]
 	      ZOrder		      623
 	      ForegroundColor	      "darkGreen"
 	      ShowName		      off
@@ -4535,6 +4107,8 @@ Model {
 		PortNumber		1
 		Name			"Trq_HPC"
 		PropagatedSignals	"Trq"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4552,7 +4126,7 @@ Model {
 	      Ports		      [4, 4]
 	      Position		      [920, 621, 1070, 739]
 	      ZOrder		      556
-	      LibraryVersion	      "1.492"
+	      LibraryVersion	      "1.485"
 	      SourceBlock	      "Lib_Turbo_TurbineNPSS_TMATS/Turbine_NPSS"
 	      SourceType	      "T-MATS: Turbine, NPSS Library Block"
 	      ContentPreviewEnabled   off
@@ -4564,18 +4138,17 @@ Model {
 	      s_T_Wc_M		      "MWS.HPT.s_Wc"
 	      s_T_PR_M		      "MWS.HPT.s_PR"
 	      s_T_Eff_M		      "MWS.HPT.s_Eff"
-	      ConfigNPSS_M	      "1"
-	      Scale_M		      "none"
+	      ConfigNPSS_M	      1
+	      Scale_M		      none
 	      CFlwEn_M		      on
 	      T_CoolFlwPos_M	      "MWS.HPT.CWPos"
-	      iDesign_M		      "2"
+	      iDesign_M		      2
 	      NcDes_M		      "MWS.HPT.NcMapDes"
 	      EffDes_M		      "MWS.HPT.EffDes"
 	      PRDes_M		      "MWS.HPT.PRMapDes"
 	      NDes_M		      "MWS.HPT.NDes"
 	      FVar_M		      "strcat('iDes_',stripchar_TMATS(gcb),'.bin')"
 	      BlkNm_M		      "double(gcb)"
-	      HP_M		      off
 	    }
 	    Block {
 	      BlockType		      Goto
@@ -4640,6 +4213,8 @@ Model {
 		PortNumber		1
 		Name			"N_HPC"
 		PropagatedSignals	"Nmech"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4655,6 +4230,8 @@ Model {
 		PortNumber		1
 		Name			"N_HPT"
 		PropagatedSignals	"Nmech"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4710,6 +4287,8 @@ Model {
 		PortNumber		1
 		Name			"Trq_HPT"
 		PropagatedSignals	"Trq"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4743,6 +4322,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"HPC_Data"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4810,6 +4391,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S36"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4823,6 +4406,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S4"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4836,6 +4421,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S45"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4867,6 +4454,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"HPT_Data"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4890,9 +4479,6 @@ Model {
 		Name			"S36 Static Calc"
 		Location		[206, 106, 1327, 795]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -4904,7 +4490,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"250"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "S36t"
@@ -4922,26 +4507,35 @@ Model {
 		  ZOrder		  1826
 		  ShowName		  off
 		  OutputSignals		  "W,ht,Tt,Pt,FAR"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<W>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<ht>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "<Tt>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "<Pt>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "<FAR>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -4962,17 +4556,17 @@ Model {
 		  Ports			  [1, 1]
 		  Position		  [155, 54, 270, 76]
 		  ZOrder		  1825
-		  LibraryVersion	  "1.361"
+		  LibraryVersion	  "1.360"
 		  SourceBlock		  "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
 		  SourceType		  "T-MATS: Static Calculation Library Block"
 		  ContentPreviewEnabled	  off
 		  ST_M			  off
 		  Ath_M			  "MWS.HPC.Ath"
-		  MN_M			  "0.3"
-		  X_FARVec_M		  "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-		  Y_TtVec_M		  "[300 10000]"
-		  T_RtArray_M		  "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-		  T_gammaArray_M	  "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
+		  MN_M			  0.3
+		  X_FARVec_M		  [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+		  Y_TtVec_M		  [300 10000]
+		  T_RtArray_M		  [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+		  T_gammaArray_M	  [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
 		}
 		Block {
 		  BlockType		  Outport
@@ -5062,9 +4656,6 @@ Model {
 		Name			"S36bus"
 		Location		[206, 106, 1327, 795]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -5076,7 +4667,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"200"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "S36tot"
@@ -5104,7 +4694,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "7"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -5115,14 +4704,17 @@ Model {
 		  ZOrder		  1904
 		  ShowName		  off
 		  OutputSignals		  "Ps,Ts"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<Ps>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<Ts>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -5134,26 +4726,35 @@ Model {
 		  ZOrder		  1905
 		  ShowName		  off
 		  OutputSignals		  "W,ht,Tt,Pt,FAR"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<W>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<ht>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "<Tt>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "<Pt>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "<FAR>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -5343,11 +4944,11 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      355
+	      ZOrder		      95
 	      SrcBlock		      "HPTNmech1"
 	      SrcPort		      1
-	      DstBlock		      "CompressorVG"
-	      DstPort		      4
+	      DstBlock		      "HPC"
+	      DstPort		      3
 	    }
 	    Line {
 	      ZOrder		      92
@@ -5392,24 +4993,24 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      357
+	      ZOrder		      77
 	      SrcBlock		      "HPC_Rline1"
 	      SrcPort		      1
-	      DstBlock		      "CompressorVG"
+	      DstBlock		      "HPC"
 	      DstPort		      2
 	    }
 	    Line {
-	      ZOrder		      354
-	      SrcBlock		      "CompressorVG"
+	      ZOrder		      74
+	      SrcBlock		      "HPC"
 	      SrcPort		      4
 	      DstBlock		      "HPC_NErr1"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      356
+	      ZOrder		      103
 	      SrcBlock		      "FlwIn"
 	      SrcPort		      1
-	      DstBlock		      "CompressorVG"
+	      DstBlock		      "HPC"
 	      DstPort		      1
 	    }
 	    Line {
@@ -5451,22 +5052,22 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      349
-	      SrcBlock		      "CompressorVG"
+	      ZOrder		      76
+	      SrcBlock		      "HPC"
 	      SrcPort		      1
 	      DstBlock		      "HPC_term2"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      352
-	      SrcBlock		      "CompressorVG"
+	      ZOrder		      256
+	      SrcBlock		      "HPC"
 	      SrcPort		      6
 	      DstBlock		      "Pamb6"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      351
-	      SrcBlock		      "CompressorVG"
+	      ZOrder		      73
+	      SrcBlock		      "HPC"
 	      SrcPort		      5
 	      DstBlock		      "HPC_TrqOut1"
 	      DstPort		      1
@@ -5479,10 +5080,10 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      350
-	      SrcBlock		      "CompressorVG"
+	      ZOrder		      9
+	      SrcBlock		      "HPC"
 	      SrcPort		      3
-	      Points		      [49, 0]
+	      Points		      [44, 0]
 	      Branch {
 		ZOrder			136
 		Points			[0, -15]
@@ -5621,10 +5222,10 @@ Model {
 	      DstPort		      10
 	    }
 	    Line {
-	      ZOrder		      353
-	      SrcBlock		      "CompressorVG"
+	      ZOrder		      75
+	      SrcBlock		      "HPC"
 	      SrcPort		      2
-	      Points		      [5, 0; 0, -95]
+	      Points		      [41, 0; 0, -95]
 	      DstBlock		      "Demux"
 	      DstPort		      1
 	    }
@@ -5731,25 +5332,13 @@ Model {
 	      DstBlock		      "Pamb16"
 	      DstPort		      1
 	    }
-	    Line {
-	      ZOrder		      358
-	      SrcBlock		      "Alpha"
-	      SrcPort		      1
-	      DstBlock		      "Goto"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      359
-	      SrcBlock		      "From"
-	      SrcPort		      1
-	      DstBlock		      "CompressorVG"
-	      DstPort		      3
-	    }
 	    Annotation {
 	      SID		      "1261"
 	      Name		      "HPC static parameter calculation"
-	      Position		      [426, 865, 573, 879]
+	      Position		      [426, 865, 582, 880]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      ZOrder		      -1
@@ -5763,6 +5352,8 @@ Model {
 	      "-indent:0px;\"><span style=\" font-size:28pt;\">Engine Core</span></p></body></html>"
 	      Position		      [545, 484, 752, 529]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -5777,6 +5368,8 @@ Model {
 	      "-indent:0px;\"><span style=\" font-size:28pt;\">Inputs</span></p></body></html>"
 	      Position		      [205, 54, 307, 99]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -5789,8 +5382,10 @@ Model {
 	      "; }\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;"
 	      "\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
 	      "-indent:0px;\"><span style=\" font-size:28pt;\">Outputs</span></p></body></html>"
-	      Position		      [843, 19, 974, 64]
+	      Position		      [843, 19, 975, 64]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -5824,11 +5419,11 @@ Model {
 	  BlockType		  Demux
 	  Name			  "Demux2"
 	  SID			  "535"
-	  Ports			  [1, 7]
-	  Position		  [165, 826, 170, 994]
+	  Ports			  [1, 6]
+	  Position		  [165, 824, 170, 971]
 	  ZOrder		  811
 	  ShowName		  off
-	  Outputs		  "7"
+	  Outputs		  "6"
 	  DisplayOption		  "bar"
 	}
 	Block {
@@ -5843,9 +5438,6 @@ Model {
 	    Name		    "EngData"
 	    Location		    [232, 31, 1146, 760]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5857,7 +5449,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "39"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Amb"
@@ -5956,10 +5547,11 @@ Model {
 	      ZOrder		      803
 	      Inputs		      "20"
 	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
 	      Port {
 		PortNumber		1
 		Name			"Eng_Bus"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -5973,14 +5565,13 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"SM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      System {
 		Name			"CompressorSurgeMargin"
 		Location		[1839, 306, 2960, 995]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -5992,7 +5583,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"300"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Front"
@@ -6020,7 +5610,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "3"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -6031,10 +5620,11 @@ Model {
 		  ZOrder		  1891
 		  ShowName		  off
 		  OutputSignals		  "HPC_Data.SMMap"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<SMMap>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6046,14 +5636,17 @@ Model {
 		  ZOrder		  1893
 		  ShowName		  off
 		  OutputSignals		  "FAN_Data.SMMap,LPC_Data.SMMap"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<SMMap>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<SMMap>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6069,6 +5662,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "SMFan"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6084,6 +5679,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "SMLPC"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6099,6 +5696,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "SMHPC"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6197,14 +5796,13 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"Data"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      System {
 		Name			"CompressorTurbineDataBus"
 		Location		[2292, 82, 3745, 1066]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -6216,7 +5814,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Front"
@@ -6253,7 +5850,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "5"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -6264,10 +5860,11 @@ Model {
 		  ZOrder		  1899
 		  ShowName		  off
 		  OutputSignals		  "LPT_Data"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<LPT_Data>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6279,14 +5876,17 @@ Model {
 		  ZOrder		  1897
 		  ShowName		  off
 		  OutputSignals		  "FAN_Data,LPC_Data"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<FAN_Data>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<LPC_Data>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6298,14 +5898,17 @@ Model {
 		  ZOrder		  1898
 		  ShowName		  off
 		  OutputSignals		  "HPC_Data,HPT_Data"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<HPC_Data>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<HPT_Data>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6672,14 +6275,13 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"Perf"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      System {
 		Name			"Performance"
 		Location		[2549, 192, 3822, 1040]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -6691,7 +6293,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Front"
@@ -6729,6 +6330,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Fg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6742,6 +6345,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Fnet"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6756,6 +6361,8 @@ Model {
 		    PortNumber		    1
 		    Name		    "TSFC"
 		    PropagatedSignals	    "SFC"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6768,7 +6375,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "6"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -6779,10 +6385,11 @@ Model {
 		  ZOrder		  1884
 		  ShowName		  off
 		  OutputSignals		  "Fg_Core"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<Fg_Core>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6794,10 +6401,11 @@ Model {
 		  ZOrder		  1869
 		  ShowName		  off
 		  OutputSignals		  "Fg_Byp"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<Fg_Byp>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6809,10 +6417,11 @@ Model {
 		  ZOrder		  1885
 		  ShowName		  off
 		  OutputSignals		  "Fdrag"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<Fdrag>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6918,14 +6527,13 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"Shaft"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      System {
 		Name			"Shafts"
 		Location		[1923, 225, 3044, 915]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -6937,7 +6545,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Front"
@@ -6967,6 +6574,8 @@ Model {
 		    PortNumber		    1
 		    Name		    "Ndot_LPC"
 		    PropagatedSignals	    "Ndot"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6981,6 +6590,8 @@ Model {
 		    PortNumber		    1
 		    Name		    "Ndot_HPC"
 		    PropagatedSignals	    "Ndot"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6993,7 +6604,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "5"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -7004,14 +6614,17 @@ Model {
 		  ZOrder		  1887
 		  ShowName		  off
 		  OutputSignals		  "N_Fan,N_LPC"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<N_Fan>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<N_LPC>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -7023,10 +6636,11 @@ Model {
 		  ZOrder		  1889
 		  ShowName		  off
 		  OutputSignals		  "N_HPC"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<N_HPC>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -7117,9 +6731,6 @@ Model {
 		Name			"StationParameterData"
 		Location		[2549, 192, 3822, 1040]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -7131,7 +6742,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"150"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "AmbIn"
@@ -7186,10 +6796,11 @@ Model {
 		  ShowName		  off
 		  Inputs		  "2"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		  Port {
 		    PortNumber		    1
 		    Name		    "Amb"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -7201,14 +6812,17 @@ Model {
 		  ZOrder		  1841
 		  ShowName		  off
 		  OutputSignals		  "Pa,Ts"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<Pa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<Ts>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -7220,38 +6834,53 @@ Model {
 		  ZOrder		  1870
 		  ShowName		  off
 		  OutputSignals		  "S0,S2,S21,S13,S22,S23,S24,S25"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<S0>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<S2>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "<S21>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "<S13>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "<S22>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    6
 		    Name		    "<S23>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    7
 		    Name		    "<S24>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    8
 		    Name		    "<S25>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -7263,18 +6892,23 @@ Model {
 		  ZOrder		  1873
 		  ShowName		  off
 		  OutputSignals		  "S36,S4,S45"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<S36>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<S4>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "<S45>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -7286,18 +6920,23 @@ Model {
 		  ZOrder		  1874
 		  ShowName		  off
 		  OutputSignals		  "S48,S5,S7"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<S48>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "<S5>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "<S7>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -7309,10 +6948,11 @@ Model {
 		  ZOrder		  1875
 		  ShowName		  off
 		  OutputSignals		  "S17"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<S17>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -8045,6 +7685,8 @@ Model {
 	      "-indent:0px;\"><span style=\" font-size:12pt;\">Station Parameter Data</span></p></body></html>"
 	      Position		      [270, 221, 437, 242]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -8063,14 +7705,6 @@ Model {
 	  GotoTag		  "W"
 	}
 	Block {
-	  BlockType		  From
-	  Name			  "From"
-	  SID			  "1279"
-	  Position		  [595, 386, 650, 404]
-	  ZOrder		  1859
-	  GotoTag		  "Alpha"
-	}
-	Block {
 	  BlockType		  SubSystem
 	  Name			  "FrontEng"
 	  SID			  "48"
@@ -8082,9 +7716,6 @@ Model {
 	    Name		    "FrontEng"
 	    Location		    [232, 31, 1146, 760]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8096,7 +7727,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "39"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "AmbFlow"
@@ -8174,7 +7804,6 @@ Model {
 	      ShowName		      off
 	      Inputs		      "15"
 	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -8183,12 +7812,12 @@ Model {
 	      Ports		      [3, 6]
 	      Position		      [480, 830, 635, 975]
 	      ZOrder		      812
-	      LibraryVersion	      "1.531"
+	      LibraryVersion	      "1.524"
 	      SourceBlock	      "Lib_Turbo_Compressor_TMATS/Compressor"
 	      SourceType	      "T-MATS: Compressor Library Block"
 	      ContentPreviewEnabled   off
 	      X_C_RlineVec_M	      "MWS.FAN.RVec"
-	      Z_C_AlphaVec_M	      "1"
+	      Z_C_AlphaVec_M	      1
 	      Y_C_Map_NcVec_M	      "MWS.FAN.NcVec"
 	      T_C_Map_WcArray_M	      "MWS.FAN.WcArray"
 	      T_C_Map_PRArray_M	      "MWS.FAN.PRArray"
@@ -8198,27 +7827,26 @@ Model {
 	      s_C_PR_M		      "MWS.FAN.s_PR"
 	      s_C_Eff_M		      "MWS.FAN.s_Eff"
 	      SL_M		      off
-	      Scale_M		      "none"
+	      Scale_M		      none
 	      CBLDEN_M		      off
-	      C_CBD_M		      "0"
-	      C_CBFht_M		      "0.5"
-	      C_CBFPt_M		      "0.5"
+	      C_CBD_M		      0
+	      C_CBFht_M		      0.5
+	      C_CBFPt_M		      0.5
 	      FBLDEN_M		      off
-	      C_FBD_M		      "0"
-	      C_BFht_M		      "0.5"
-	      C_BFPt_M		      "0.5"
+	      C_FBD_M		      0
+	      C_BFht_M		      0.5
+	      C_BFPt_M		      0.5
 	      DefSMEn_M		      off
-	      SRline_M		      "1"
+	      SRline_M		      1
 	      X_C_Map_WcSurgeVec_M    "MWS.FAN.SM_WcVec"
 	      T_C_Map_PRSurgeVec_M    "MWS.FAN.SM_PRVec"
-	      iDesign_M		      "2"
+	      iDesign_M		      2
 	      NcDes_M		      "MWS.FAN.NcDesMap"
 	      EffDes_M		      "MWS.FAN.EffDes"
 	      PRDes_M		      "MWS.FAN.PRDes"
 	      RlineDes_M	      "MWS.FAN.RlineDesMap"
 	      FVar_M		      "strcat('iDes_',stripchar_TMATS(gcb),'.bin')"
 	      BlkNm_M		      "double(gcb)"
-	      HP_M		      off
 	    }
 	    Block {
 	      BlockType		      Goto
@@ -8353,6 +7981,8 @@ Model {
 		PortNumber		1
 		Name			"N_LPC"
 		PropagatedSignals	"Nmech"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8377,12 +8007,12 @@ Model {
 	      Ports		      [3, 6]
 	      Position		      [1325, 935, 1480, 1080]
 	      ZOrder		      813
-	      LibraryVersion	      "1.531"
+	      LibraryVersion	      "1.524"
 	      SourceBlock	      "Lib_Turbo_Compressor_TMATS/Compressor"
 	      SourceType	      "T-MATS: Compressor Library Block"
 	      ContentPreviewEnabled   off
 	      X_C_RlineVec_M	      "MWS.LPC.RVec"
-	      Z_C_AlphaVec_M	      "1"
+	      Z_C_AlphaVec_M	      1
 	      Y_C_Map_NcVec_M	      "MWS.LPC.NcVec"
 	      T_C_Map_WcArray_M	      "MWS.LPC.WcArray"
 	      T_C_Map_PRArray_M	      "MWS.LPC.PRArray"
@@ -8392,27 +8022,26 @@ Model {
 	      s_C_PR_M		      "MWS.LPC.s_PR"
 	      s_C_Eff_M		      "MWS.LPC.s_Eff"
 	      SL_M		      on
-	      Scale_M		      "none"
+	      Scale_M		      none
 	      CBLDEN_M		      off
-	      C_CBD_M		      "0"
-	      C_CBFht_M		      "0.5"
-	      C_CBFPt_M		      "0.5"
+	      C_CBD_M		      0
+	      C_CBFht_M		      0.5
+	      C_CBFPt_M		      0.5
 	      FBLDEN_M		      off
-	      C_FBD_M		      "0"
-	      C_BFht_M		      "0.5"
-	      C_BFPt_M		      "0.5"
+	      C_FBD_M		      0
+	      C_BFht_M		      0.5
+	      C_BFPt_M		      0.5
 	      DefSMEn_M		      off
-	      SRline_M		      "1"
+	      SRline_M		      1
 	      X_C_Map_WcSurgeVec_M    "MWS.LPC.SM_WcVec"
 	      T_C_Map_PRSurgeVec_M    "MWS.LPC.SM_PRVec"
-	      iDesign_M		      "2"
+	      iDesign_M		      2
 	      NcDes_M		      "MWS.LPC.NcDesMap"
 	      EffDes_M		      "MWS.LPC.EffDes"
 	      PRDes_M		      "MWS.LPC.PRDes"
 	      RlineDes_M	      "MWS.LPC.RlineDesMap"
 	      FVar_M		      "strcat('iDes_',stripchar_TMATS(gcb),'.bin')"
 	      BlkNm_M		      "double(gcb)"
-	      HP_M		      off
 	    }
 	    Block {
 	      BlockType		      Goto
@@ -8487,6 +8116,8 @@ Model {
 		PortNumber		1
 		Name			"Trq_LPC"
 		PropagatedSignals	"Trq"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8533,6 +8164,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S2"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8546,6 +8179,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S21"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8568,6 +8203,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S0"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8582,6 +8219,8 @@ Model {
 		PortNumber		1
 		Name			"S13"
 		PropagatedSignals	"BGPC"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8596,6 +8235,8 @@ Model {
 		PortNumber		1
 		Name			"S22"
 		PropagatedSignals	"MGPC"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8609,6 +8250,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S23"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8623,6 +8266,8 @@ Model {
 		PortNumber		1
 		Name			"S24"
 		PropagatedSignals	"MGPC"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8636,6 +8281,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"S25"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8668,6 +8315,8 @@ Model {
 		PortNumber		1
 		Name			"Trq_Fan"
 		PropagatedSignals	"Trq"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8690,6 +8339,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"N_Fan"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8739,6 +8390,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"VBVdmd"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8761,6 +8414,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"FAN_Data"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8783,6 +8438,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"LPC_Data"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -8837,7 +8494,7 @@ Model {
 	      Ports		      [2, 2]
 	      Position		      [865, 880, 1070, 920]
 	      ZOrder		      337
-	      LibraryVersion	      "1.467"
+	      LibraryVersion	      "1.465"
 	      SourceBlock	      "Lib_Turbo_Splitter_TMATS/Splitter"
 	      SourceType	      "T-MATS: Splitter Library Block"
 	      ContentPreviewEnabled   off
@@ -8889,7 +8546,7 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		36
+		$ObjectID		31
 		$ClassName		"Simulink.Mask"
 		Type			"T-MATS: Duct Library Block"
 		Description		"This block simulates the performance of a duct using basic fluid dynamic equations and properties.\n"
@@ -8898,21 +8555,21 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    37
+		    $ObjectID		    32
 		    Type		    "edit"
 		    Name		    "dP_M"
 		    Prompt		    "dP_M - Delta Pressure [frac lost]"
 		    Value		    "MWS.Duct.D2"
 		  }
 		  Object {
-		    $ObjectID		    38
+		    $ObjectID		    33
 		    Type		    "edit"
 		    Name		    "MNdes_M"
 		    Prompt		    "MNdes_M - Mach Number Design"
 		    Value		    "MWS.Duct.MNdes2"
 		  }
 		  Object {
-		    $ObjectID		    39
+		    $ObjectID		    34
 		    Type		    "edit"
 		    Name		    "Ath_M"
 		    Prompt		    "Ath_M - Throat Area [in2]"
@@ -8925,9 +8582,6 @@ Model {
 		Name			"duct2"
 		Location		[1858, 212, 3152, 1077]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -8939,7 +8593,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "GasPthCharIn"
@@ -8958,10 +8611,11 @@ Model {
 		  ZOrder		  342
 		  ShowName		  off
 		  OutputSignals		  "MN"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<MN>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -8975,7 +8629,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "5"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  Constant
@@ -9017,22 +8670,32 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "W"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "ht"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Tt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Gas Path total Pressure; Pt[psia]"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "FAR"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -9135,6 +8798,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -9151,6 +8816,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -9173,17 +8840,17 @@ Model {
 		  Ports			  [1, 1]
 		  Position		  [100, 584, 215, 636]
 		  ZOrder		  341
-		  LibraryVersion	  "1.361"
+		  LibraryVersion	  "1.360"
 		  SourceBlock		  "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
 		  SourceType		  "T-MATS: Static Calculation Library Block"
 		  ContentPreviewEnabled	  off
 		  ST_M			  off
-		  Ath_M			  "Ath_M"
-		  MN_M			  "0.45"
-		  X_FARVec_M		  "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-		  Y_TtVec_M		  "[300 10000]"
-		  T_RtArray_M		  "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-		  T_gammaArray_M	  "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
+		  Ath_M			  Ath_M
+		  MN_M			  0.45
+		  X_FARVec_M		  [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+		  Y_TtVec_M		  [300 10000]
+		  T_RtArray_M		  [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+		  T_gammaArray_M	  [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
 		}
 		Block {
 		  BlockType		  Sum
@@ -9411,8 +9078,10 @@ Model {
 		Annotation {
 		  SID			  "780"
 		  Name			  "dP = dPdes * (MN/MNdes)^2"
-		  Position		  [348, 549, 477, 563]
+		  Position		  [348, 549, 482, 564]
 		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
 		  HorizontalAlignment	  "left"
 		  VerticalAlignment	  "top"
 		  ZOrder		  -1
@@ -9429,7 +9098,7 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		40
+		$ObjectID		35
 		$ClassName		"Simulink.Mask"
 		Type			"T-MATS: Duct Library Block"
 		Description		"This block simulates the performance of a duct using basic fluid dynamic equations and properties.\n"
@@ -9438,21 +9107,21 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    41
+		    $ObjectID		    36
 		    Type		    "edit"
 		    Name		    "dP_M"
 		    Prompt		    "dP_M - Delta Pressure [frac lost]"
 		    Value		    "MWS.Duct.D25"
 		  }
 		  Object {
-		    $ObjectID		    42
+		    $ObjectID		    37
 		    Type		    "edit"
 		    Name		    "MNdes_M"
 		    Prompt		    "MNdes_M - Mach Number Design"
 		    Value		    "MWS.Duct.MNdes25"
 		  }
 		  Object {
-		    $ObjectID		    43
+		    $ObjectID		    38
 		    Type		    "edit"
 		    Name		    "Ath_M"
 		    Prompt		    "Ath_M - Throat Area [in2]"
@@ -9465,9 +9134,6 @@ Model {
 		Name			"duct25"
 		Location		[1858, 212, 3152, 1077]
 		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -9479,7 +9145,6 @@ Model {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"125"
-		SimulinkSubDomain	"Simulink"
 		Block {
 		  BlockType		  Inport
 		  Name			  "GasPthCharIn"
@@ -9498,10 +9163,11 @@ Model {
 		  ZOrder		  342
 		  ShowName		  off
 		  OutputSignals		  "MN"
-		  OutputAsBus		  off
 		  Port {
 		    PortNumber		    1
 		    Name		    "<MN>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -9515,7 +9181,6 @@ Model {
 		  ShowName		  off
 		  Inputs		  "5"
 		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
 		}
 		Block {
 		  BlockType		  Constant
@@ -9557,22 +9222,32 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "W"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "ht"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "Tt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "Gas Path total Pressure; Pt[psia]"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    5
 		    Name		    "FAR"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -9675,6 +9350,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -9691,6 +9368,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Pt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -9713,17 +9392,17 @@ Model {
 		  Ports			  [1, 1]
 		  Position		  [100, 584, 215, 636]
 		  ZOrder		  341
-		  LibraryVersion	  "1.361"
+		  LibraryVersion	  "1.360"
 		  SourceBlock		  "Lib_Turbo_StaticCalc_TMATS/StaticCalc"
 		  SourceType		  "T-MATS: Static Calculation Library Block"
 		  ContentPreviewEnabled	  off
 		  ST_M			  off
-		  Ath_M			  "Ath_M"
-		  MN_M			  "0.45"
-		  X_FARVec_M		  "[0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]"
-		  Y_TtVec_M		  "[300 10000]"
-		  T_RtArray_M		  "[0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]"
-		  T_gammaArray_M	  "[ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]"
+		  Ath_M			  Ath_M
+		  MN_M			  0.45
+		  X_FARVec_M		  [0; 0.0050; 0.0100; 0.0150; 0.0200; 0.0250; 0.0300]
+		  Y_TtVec_M		  [300 10000]
+		  T_RtArray_M		  [0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686;    0.0686]
+		  T_gammaArray_M	  [ 1.4 1.4 1.4 1.4 1.4 1.4 1.4; 1.4 1.4 1.4 1.4 1.4 1.4 1.4]
 		}
 		Block {
 		  BlockType		  Sum
@@ -9951,8 +9630,10 @@ Model {
 		Annotation {
 		  SID			  "910"
 		  Name			  "dP = dPdes * (MN/MNdes)^2"
-		  Position		  [348, 549, 477, 563]
+		  Position		  [348, 549, 482, 564]
 		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
 		  HorizontalAlignment	  "left"
 		  VerticalAlignment	  "top"
 		  ZOrder		  -1
@@ -10557,8 +10238,10 @@ Model {
 	      "; }\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;"
 	      "\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
 	      "-indent:0px;\"><span style=\" font-size:28pt;\">Inlet to LPC</span></p></body></html>"
-	      Position		      [957, 669, 1152, 714]
+	      Position		      [957, 669, 1150, 714]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -10571,8 +10254,10 @@ Model {
 	      "; }\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;"
 	      "\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
 	      "-indent:0px;\"><span style=\" font-size:22pt;\">Inputs</span></p></body></html>"
-	      Position		      [202, 20, 282, 55]
+	      Position		      [202, 20, 282, 56]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -10585,8 +10270,10 @@ Model {
 	      "; }\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;"
 	      "\">\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"
 	      " -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"
-	      Position		      [754, 124, 756, 138]
+	      Position		      [754, 124, 756, 139]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
@@ -10599,22 +10286,16 @@ Model {
 	      "; }\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;"
 	      "\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
 	      "-indent:0px;\"><span style=\" font-size:22pt;\">Outputs</span></p></body></html>"
-	      Position		      [612, 20, 715, 55]
+	      Position		      [612, 20, 716, 56]
 	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
 	      Interpreter	      "rich"
 	      ZOrder		      3
 	    }
 	  }
-	}
-	Block {
-	  BlockType		  Goto
-	  Name			  "Goto"
-	  SID			  "1278"
-	  Position		  [215, 977, 280, 993]
-	  ZOrder		  1858
-	  GotoTag		  "Alpha"
 	}
 	Block {
 	  BlockType		  From
@@ -10700,7 +10381,7 @@ Model {
 	  BlockType		  From
 	  Name			  "HPTNmech2"
 	  SID			  "211"
-	  Position		  [895, 343, 970, 357]
+	  Position		  [895, 333, 970, 347]
 	  ZOrder		  689
 	  ForegroundColor	  "red"
 	  ShowName		  off
@@ -10833,7 +10514,7 @@ Model {
 	  BlockType		  From
 	  Name			  "LPC_NErrD12"
 	  SID			  "243"
-	  Position		  [915, 324, 970, 336]
+	  Position		  [915, 314, 970, 326]
 	  ZOrder		  721
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -10913,7 +10594,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "LPC_NErrD2"
 	  SID			  "230"
-	  Position		  [790, 304, 820, 316]
+	  Position		  [790, 294, 820, 306]
 	  ZOrder		  708
 	  ForegroundColor	  "green"
 	  ShowName		  off
@@ -10983,7 +10664,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "LPC_NErrD3"
 	  SID			  "231"
-	  Position		  [790, 324, 820, 336]
+	  Position		  [790, 314, 820, 326]
 	  ZOrder		  709
 	  ForegroundColor	  "green"
 	  ShowName		  off
@@ -10993,7 +10674,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "LPC_NErrD4"
 	  SID			  "232"
-	  Position		  [1115, 269, 1145, 281]
+	  Position		  [1115, 259, 1145, 271]
 	  ZOrder		  710
 	  ForegroundColor	  "green"
 	  ShowName		  off
@@ -11003,7 +10684,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "LPC_NErrD5"
 	  SID			  "233"
-	  Position		  [1115, 294, 1145, 306]
+	  Position		  [1115, 284, 1145, 296]
 	  ZOrder		  711
 	  ForegroundColor	  "green"
 	  ShowName		  off
@@ -11093,7 +10774,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "LPC_TrqOutT4"
 	  SID			  "207"
-	  Position		  [1115, 319, 1195, 331]
+	  Position		  [1115, 309, 1195, 321]
 	  ZOrder		  685
 	  ForegroundColor	  "[1.000000, 0.333333, 0.498039]"
 	  ShowName		  off
@@ -11113,7 +10794,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "LPC_TrqOutT6"
 	  SID			  "215"
-	  Position		  [785, 344, 865, 356]
+	  Position		  [785, 334, 865, 346]
 	  ZOrder		  693
 	  ForegroundColor	  "[1.000000, 0.333333, 0.498039]"
 	  ShowName		  off
@@ -11123,7 +10804,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "LPC_TrqOutT7"
 	  SID			  "216"
-	  Position		  [785, 364, 865, 376]
+	  Position		  [785, 354, 865, 366]
 	  ZOrder		  694
 	  ForegroundColor	  "[1.000000, 0.333333, 0.498039]"
 	  ShowName		  off
@@ -11219,7 +10900,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Pamb10"
 	  SID			  "360"
-	  Position		  [790, 383, 820, 397]
+	  Position		  [790, 373, 820, 387]
 	  ZOrder		  777
 	  ShowName		  off
 	  GotoTag		  "C_D"
@@ -11244,6 +10925,8 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "BypassEng"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -11257,13 +10940,15 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "FrontEng"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
 	  BlockType		  Goto
 	  Name			  "Pamb14"
 	  SID			  "361"
-	  Position		  [1120, 343, 1150, 357]
+	  Position		  [1120, 333, 1150, 347]
 	  ZOrder		  778
 	  ShowName		  off
 	  GotoTag		  "B_D"
@@ -11279,6 +10964,8 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "CoreEng"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -11292,6 +10979,8 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "BackEng"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -11341,6 +11030,8 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "Amb"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
@@ -11429,7 +11120,7 @@ Model {
 	  BlockType		  From
 	  Name			  "Pamb3"
 	  SID			  "191"
-	  Position		  [925, 303, 970, 317]
+	  Position		  [925, 293, 970, 307]
 	  ZOrder		  675
 	  ShowName		  off
 	  GotoTag		  "Pamb"
@@ -11568,9 +11259,6 @@ Model {
 	    Name		    "external torque"
 	    Location		    [113, 60, 1536, 743]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -11582,7 +11270,6 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "175"
-	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Power"
@@ -11593,6 +11280,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"HorsePower"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -11606,6 +11295,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"RPM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -12517,20 +12208,6 @@ Model {
 	  DstBlock		  "EngData"
 	  DstPort		  8
 	}
-	Line {
-	  ZOrder		  1075
-	  SrcBlock		  "Demux2"
-	  SrcPort		  7
-	  DstBlock		  "Goto"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  1076
-	  SrcBlock		  "From"
-	  SrcPort		  1
-	  DstBlock		  "Core"
-	  DstPort		  6
-	}
 	Annotation {
 	  SID			  "192"
 	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
@@ -12539,8 +12216,10 @@ Model {
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:20pt; font-weight:600;\">GTF30F, </span><span style=\" font-size:20pt; font-weight:600;\">Geare"
 	  "d Turbofan</span><span style=\" font-size:20pt; font-weight:600;\"> Engine</span></p></body></html>"
-	  Position		  [560, 63, 987, 96]
+	  Position		  [560, 63, 999, 98]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
@@ -12553,8 +12232,10 @@ Model {
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:20pt; font-weight:600;\">System Inputs</span></p></body></html>"
-	  Position		  [155, 768, 341, 801]
+	  Position		  [155, 768, 346, 803]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
@@ -12567,8 +12248,10 @@ Model {
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:20pt; font-weight:600;\">Solver I/O</span></p></body></html>"
-	  Position		  [559, 723, 687, 756]
+	  Position		  [559, 723, 690, 758]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
@@ -12581,8 +12264,10 @@ Model {
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:20pt; font-weight:600;\">System Data</span></p></body></html>"
-	  Position		  [1084, 1028, 1248, 1061]
+	  Position		  [1084, 1028, 1251, 1063]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
@@ -12595,8 +12280,10 @@ Model {
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:20pt; font-weight:600;\">Solver/Integrator I/O</span></p></body></html>"
-	  Position		  [481, 1008, 742, 1041]
+	  Position		  [481, 1008, 749, 1043]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
@@ -12609,8 +12296,10 @@ Model {
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:16pt; font-weight:600;\">Independents</span></p></body></html>"
-	  Position		  [450, 783, 588, 809]
+	  Position		  [450, 783, 590, 810]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
@@ -12623,8 +12312,10 @@ Model {
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:16pt; font-weight:600;\">Dependents</span></p></body></html>"
-	  Position		  [666, 783, 788, 809]
+	  Position		  [666, 783, 790, 810]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
@@ -12637,8 +12328,10 @@ Model {
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
 	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
 	  " style=\" font-size:20pt; font-weight:600;\">Eng Calcs</span></p></body></html>"
-	  Position		  [1035, 780, 1167, 813]
+	  Position		  [1035, 780, 1170, 815]
 	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
